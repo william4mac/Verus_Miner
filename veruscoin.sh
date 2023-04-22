@@ -1,5 +1,6 @@
 #veruscoin
 sudo apt update
-wget https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64.tar.gz
-tar -xf hellminer_linux64.tar.gz
-./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RFgMN2odzF3GuwfKWMiRZquCYsVfh8QnVm.Pacul -p x --cpu 2
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.4/SRBMiner-Multi-2-2-4-Linux.tar.xz
+tar -xvf SRBMiner-Multi-2-2-4-Linux.tar.xz
+cd SRBMiner-Multi-2-2-4
+./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ap.luckpool.net:3956 --wallet RFgMN2odzF3GuwfKWMiRZquCYsVfh8QnVm.Sand --password x --cpu-threads 4 --disable-gpu
